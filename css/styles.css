@@ -1,0 +1,139 @@
+/******************************************
+/* IMPORT WEBFONTS
+/*******************************************/
+
+@font-face {
+    font-family: 'HelveticaNowText-Medium';
+    src:
+         url('../fonts/3A75F8_0_0.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/3A75F8_0_0.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/3A75F8_0_0.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'HelveticaNowDisplay-XBd';
+    src:
+         url('../fonts/3A75F8_F_0.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/3A75F8_F_0.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/3A75F8_F_0.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+    line-height: 2rem;
+}
+
+body {
+    font-family: 'HelveticaNowText-Medium', Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 62.5%    
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+p {
+    font-size: 1.4rem;
+}
+
+h2 {
+    font-family: 'HelveticaNowDisplay-XBd', Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3.5rem;
+}
+
+
+/******************************************
+/* INTRO STYLES
+/*******************************************/
+
+.intro {
+    height: 100vh;
+    background: url("../images/intro-bg-1125x2436.jpg") no-repeat center #808080;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    color: white;
+    font-size: 1.8rem;
+    padding: 0 20px 0 0;
+}
+
+
+/******************************************
+/* ABOUT STYLES
+/*******************************************/
+
+.about {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, #6c5862, #262627);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about p {
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 0 0 25px 0;
+}
+
+/******************************************
+/* FOOTER STYLES
+/*******************************************/
+
+.contact {
+    height: auto;
+    background-color: #262627;
+    color: white;
+    padding: 80px 0;
+}
+
+footer a {
+    color: white;
+}
+
+
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media (min-width: 768px) {
+    
+    .intro {
+        background: url("../images/intro-bg-2560x1800.jpg") no-repeat center #808080;
+        background-size: cover;
+    }
+
+}
