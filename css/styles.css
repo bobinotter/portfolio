@@ -71,7 +71,7 @@ p {
 
 h1 {
     font-family: 'HelveticaNowDisplay-XBd', Helvetica, Arial, sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 3.5rem;
     letter-spacing: -0.05rem;
     text-align: left;
@@ -353,6 +353,11 @@ footer a {
     /* .menu-button {
         display: none;
     } */
+
+    h1 {
+        font-size: 3rem;
+    }
+   
 
     .intro {
         background: url("../images/intro-bg-2560x1800.jpg") no-repeat center #808080;
