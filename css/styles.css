@@ -1,0 +1,398 @@
+/******************************************
+/* IMPORT WEBFONTS
+/*******************************************/
+
+@font-face {
+    font-family: 'HelveticaNowText-Medium';
+    src:
+         url('../fonts/3A75F8_0_0.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/3A75F8_0_0.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/3A75F8_0_0.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'HelveticaNowDisplay-XBd';
+    src:
+         url('../fonts/3A75F8_F_0.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/3A75F8_F_0.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/3A75F8_F_0.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+    line-height: 1.5rem;
+}
+
+body {
+    font-family: 'HelveticaNowText-Medium', Helvetica, Arial, sans-serif;
+    font-size: 62.5%;
+    background: #F2F2F2;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto 50px;
+    /* padding: 20px 5%; */
+}
+
+/* .container div{
+    padding: 0 30px;
+} */
+
+img {
+    max-width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+p {
+    font-size: 1rem;
+    /* line-height: 1.5rem; */
+    padding: 0 30px;
+
+}
+
+h1 {
+    font-family: 'HelveticaNowDisplay-XBd', Helvetica, Arial, sans-serif;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.05rem;
+    text-align: left;
+    padding: 30px 0 0 0;
+    color: #262627;
+
+    /* margin: auto; */
+}
+
+h2 {
+    font-family: 'HelveticaNowDisplay-XBd', Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    /* letter-spacing: -0.1rem; */
+    color: #693CFF;
+    padding: 30px 0 0 0;
+    /* text-align: center; */
+}
+
+i {
+    color: white;
+    font-size: 1.8rem;
+    padding: 0 10px 0 10px;
+}
+
+.description {
+    font-size: 0.9rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+/******************************************
+/* HEADER STYLES
+/*******************************************/
+
+header {
+    /* position: fixed; */
+    /* width: 100%; */
+    top: 0;
+    /* left: 1.25%; */
+    /* right: 2%; */
+    padding: 50px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #262627;
+}
+
+header img {
+    width: 150px;
+}
+
+/* nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: none;
+    padding: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #262627;
+} */
+
+/******************************************
+/* INTRO STYLES
+/*******************************************/
+
+.intro {
+    height: 100vh;
+    background: url("../images/intro-bg-1125x2436.jpg") no-repeat center #808080;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro h1 {
+    color: white;
+}
+
+/* .intro h2 {
+    text-align: center;
+} */
+
+.socials {
+    position: absolute;
+    padding-top: 75vh;
+}
+
+
+
+/******************************************
+/* ABOUT STYLES
+/*******************************************/
+
+/* .about {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, #434240, #262627);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about h2 {
+    color: white;
+}
+
+.about p {
+    max-width: 60%;
+    text-align: left;
+    margin: auto;
+    padding: 0 0 25px 0;
+} */
+
+/******************************************
+/* PROJECT STYLES
+/*******************************************/
+
+.projects {
+    /* height: auto; */
+    /* background-color: #f2f2f2; */
+    /* padding: 100px 0; */
+}
+
+.projects .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects .container a {
+    margin: 2%;
+}
+
+.projects h2 {
+    color: #262627;
+    text-align: center;
+}
+
+.projects a {
+    text-decoration: none;
+}
+
+.projects p {
+    padding: 0 5px;
+    margin: auto;
+}
+
+.tile {
+    /* width: 70vw;
+    height: 70vw; */
+    margin-bottom: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(40, 13, 13, 0)); */
+    background: #FFFFFF;
+    color: #262627;
+    border: #DCDCDC 2px solid;
+    text-align: center;
+    /* background-size: cover; */
+
+
+}
+
+/* .tile p {
+    color: white;
+    align-content: center;
+} */
+
+
+
+/* .tile-scl-group-ux-overhaul {
+    background: url("../projects/scl-group-ux-overhaul/images/thumb-benesse-house.jpg") no-repeat center #808080;
+    background-size: cover;
+} */
+
+.tile:nth-child(2n+1) {
+    margin: 0 3%;
+}
+
+
+/******************************************
+/* FOOTER STYLES
+/*******************************************/
+
+.contact {
+    height: auto;
+    background-color: #262627;
+    color: white;
+    padding: 80px 0;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+/******************************************
+/* PROJECT PAGE STYLES
+/*******************************************/
+
+/* .project-intro {
+    height: 100vh;
+    color: white;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+} */
+
+/* .project-national-theatre {
+    background: url("../projects/national-theatre-touchscreens/images/P1000073-2560x1800.jpg") no-repeat center #808080;
+    background-size: cover;
+} */
+
+/* .project-intro-title {
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0));
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+} */
+
+/* .project-intro h1 {
+    margin: 0;
+    padding: 3rem;
+} */
+
+/* .project-description {
+    background-color: #f2f2f2;
+    color: #262627;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+} */
+
+/* .project-description .container {
+    max-width: 76vw;
+} */
+
+
+
+
+
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media (min-width: 768px) {
+    
+    header img {
+        /* width: 7vw; */
+        /* min-width: 70px; */
+    }
+
+    /* nav li {
+        display: inline-block;
+        padding: 0 10px;
+        font-size: 1.4rem;
+    } */
+
+    /* .menu-button {
+        display: none;
+    } */
+
+    h1 {
+        font-size: 3rem;
+    }
+   
+
+    .intro {
+        background: url("../images/intro-bg-2560x1800.jpg") no-repeat center #808080;
+        background-size: cover;
+    }
+
+    .intro h1{
+        padding-right: 50%;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    /* .projects .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 88vw;
+    } */
+    
+    
+    .tile:nth-child(2n+1) {
+        margin: 0;  
+    }
+    
+    .tile {
+        width: 23vw;
+        height: 23vw;
+        margin-bottom: 2%;
+        /* margin: 20px; */
+    }
+    
+    .tile:nth-child(3n+2) {
+        margin: 0 2%;
+        margin-left: 2%;
+        margin-right: 2%;  
+    } 
+     
+}
